@@ -32,11 +32,8 @@ class RedeNeural:
         self.parametros = {}
         self.num_camadas = len(dimensoes_camadas) - 1
         self.dimensoes = dimensoes_camadas
-        
-        if ativacao == 'relu':
-            self.ativacao = relu
-            self.ativacao_derivada = relu_derivada
-        elif ativacao == 'tanh':
+
+        if ativacao == 'tanh':
             self.ativacao = tanh
             self.ativacao_derivada = tanh_derivada
         else:
